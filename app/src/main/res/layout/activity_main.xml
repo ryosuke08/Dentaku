@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="7"
+    android:id="@+id/LL"
+    tools:context=".MainActivity"
+    tools:ignore="RtlHardcoded">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/disp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:maxLength="18"
+        android:text="@string/btn_Zero"
+        android:textSize="35sp" />
+
+    <!--2段目「AC」「+/-」「÷」-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btn_AC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_AllClear"
+            android:textSize="35sp"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btn_Color"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Color"
+            android:textSize="35sp"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btn_plus_minus"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_PlusMinus"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btn_Waru"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Div"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <!--3段目「7」「8」「9」「*」-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btn_Seven"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Seven"
+            android:textSize="35sp"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btn_Eight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Eight"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btn_Nine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Nine"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btn_Kakeru"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Kakeru"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+
+    <!--4段目「4」「5」「6」「-」-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btn_Four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Four"
+            android:textSize="35sp"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btn_Five"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Five"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btn_Six"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Six"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btn_Hiku"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Hiku"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <!--5段目「1」「2」「3」「+」-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btn_One"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_One"
+            android:textSize="35sp"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btn_Two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Two"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btn_Three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Three"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btn_Tasu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Tasu"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+    <!--6段目「0」「x²」「=」-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/btn_Zero"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Zero"
+            android:textSize="35sp"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/btn_Nijyou"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:onClick="clickButton"
+            android:text="@string/btn_Nijyou"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btn_Equal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp"
+            android:layout_weight="2"
+            android:onClick="clickButton"
+            android:text="@string/btn_Equal"
+            android:textSize="35sp" />
+    </LinearLayout>
+</LinearLayout>

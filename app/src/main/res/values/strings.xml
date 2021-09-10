@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Dentaku</string>
+    <string name="btn_PlusMinus">+/-</string>
+    <string name="btn_Div">÷</string>
+    <string name="btn_AllClear">AC</string>
+    <string name="btn_Color">色</string>
+
+    <string name="btn_Seven">7</string>
+    <string name="btn_Eight">8</string>
+    <string name="btn_Nine">9</string>
+    <string name="btn_Kakeru">×</string>
+
+    <string name="btn_Four">4</string>
+    <string name="btn_Five">5</string>
+    <string name="btn_Six">6</string>
+    <string name="btn_Hiku">-</string>
+
+    <string name="btn_One">1</string>
+    <string name="btn_Two">2</string>
+    <string name="btn_Three">3</string>
+    <string name="btn_Tasu">+</string>
+
+    <string name="btn_Zero">0</string>
+    <string name="btn_Nijyou">x²</string>
+    <string name="btn_Equal">=</string>
+  </resources>
